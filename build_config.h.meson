@@ -1,0 +1,28 @@
+#ifndef MBEDTLS_CONFIG_H
+#define MBEDTLS_CONFIG_H
+
+#mesondefine MBEDTLS_KEY_EXCHANGE_PSK_ENABLED
+#mesondefine MBEDTLS_SSL_PROTO_TLS1_2
+
+/* mbed TLS modules */
+#mesondefine MBEDTLS_AES_C
+#mesondefine MBEDTLS_CCM_C
+#mesondefine MBEDTLS_CIPHER_C
+#mesondefine MBEDTLS_CTR_DRBG_C
+#mesondefine MBEDTLS_ENTROPY_C
+#mesondefine MBEDTLS_MD_C
+#mesondefine MBEDTLS_NET_C
+#mesondefine MBEDTLS_SHA256_C
+#mesondefine MBEDTLS_SSL_CLI_C
+#mesondefine MBEDTLS_SSL_SRV_C
+#mesondefine MBEDTLS_SSL_TLS_C
+
+#mesondefine MBEDTLS_AES_ROM_TABLES
+
+#mesondefine MBEDTLS_ENTROPY_MAX_SOURCES 2
+
+#mesondefine MBEDTLS_SSL_MAX_CONTENT_LEN 1024
+
+#include "mbedtls/check_config.h"
+
+#endif /* MBEDTLS_CONFIG_H */

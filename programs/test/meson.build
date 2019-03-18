@@ -1,0 +1,5 @@
+benchmark_exe = executable('benchmark_exe', 'benchmark.c', link_with : mbedtls_lib, include_directories : mbed_inc)
+#selftest = executable('selftest', 'selftest.c', link_with : mbedtls_lib, include_directories : mbed_inc)
+ssl_cert_test = executable('ssl_cert_test', 'ssl_cert_test.c', link_with : mbedtls_lib, include_directories : mbed_inc)
+udp_proxy = executable('udp_proxy', 'udp_proxy.c', link_with : mbedtls_lib, include_directories : mbed_inc, dependencies : mbed_deps)
+#zeroize = executable('zeroize', 'zeroize.c', link_with : mbedtls_lib, include_directories : mbed_inc)

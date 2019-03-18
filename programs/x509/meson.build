@@ -1,0 +1,5 @@
+cert_app = executable('cert_app', 'cert_app.c', link_with : mbedtls_lib, include_directories : mbed_inc)
+cert_req = executable('cert_req', 'cert_req.c', link_with : mbedtls_lib, include_directories : mbed_inc)
+cert_write = executable('cert_write', 'cert_write.c', link_with : mbedtls_lib, include_directories : mbed_inc)
+crl_app = executable('crl_app', 'crl_app.c', link_with : mbedtls_lib, include_directories : mbed_inc)
+req_app = executable('req_app', 'req_app.c', link_with : mbedtls_lib, include_directories : mbed_inc)
